@@ -1,0 +1,36 @@
+{
+  "name": "@lumoralab/ui-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that reads the @lumoralab/ui React component library.",
+  "type": "module",
+  "main": "./build/index.js",
+  "bin": {
+    "@lumoralab/ui-mcp": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "lumoralab",
+    "ui",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8",
+    "@lumoralab/ui": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.9.0"
+  }
+}
